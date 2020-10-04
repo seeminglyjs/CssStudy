@@ -83,7 +83,7 @@
 <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  -->
 <!-- 2020 - 10 - 01 -->
 
- <html>
+<!--  <html>
 	<head>
 		<title>생활코딩  css 정주행</title>
 		<meta charset="UTF-8">
@@ -143,17 +143,68 @@
 			<li class ="deactive">html</li>
 			<li id="select">css</li> 		
 			<li class ="deactive">js</li>
-			<!-- class 같은 속성을 가진 값들을 grouping 하는 것이다.  -->
-			<!-- id는 식별자이기 때문에 단 한 번만  사용하여야 한다.  -->
+			class 같은 속성을 가진 값들을 grouping 하는 것이다. 
+			id는 식별자이기 때문에 단 한 번만  사용하여야 한다. 
 		</ol>
 		
-		
-			
-
-
 	</body>
 
 </html>
+ -->
+
+<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  -->
+<!-- 2020 - 10 - 04 -->
+
+
+<!-- <html>
+	<head>
+		<title>생활코딩  css 정주행</title>
+		<meta charset="UTF-8">
+		<style>
+			a:visited {
+				color:red;
+			}
+			/*보안상의 이유때문에 일부 속성만 활용할 수 있다.  */
+			a:link {
+				color:black;
+			}		
+			a:hover{
+				color:yellow;
+			/*마우스를 가져다되면 노란색이됨  */
+			}
+			
+			a:active{
+				color:green;
+			}
+			/*마우스를 누르고 있을시 초록색  */
+			
+			a:focus{
+				color:white;
+			}
+			/*가장 뒤에다가 쓰며 텝을 누를 시 선택된다.  */
+			
+			input:focus{
+				background-color:black;
+				color:white;
+			}
+			
+		</style>
+		
+				
+	</head>			
+	<body>
+		<p>
+			<a href ="https://github.com/seeminglyjs">방문함</a>
+			<a href ="https://github.com/seeminglyjs">방문안함</a>
+			<input type = "text">
+		</p>
+	</body>
+
+</html> -->
+
+<br>
+<br>
+<br>
 
 
 
