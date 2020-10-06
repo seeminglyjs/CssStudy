@@ -209,7 +209,7 @@
 <!-- 2020 - 10 - 05 -->
 
 
-<html>
+<!-- <html>
 	<head>
 		<title>생활코딩  css 정주행</title>
 		<meta charset="UTF-8">
@@ -239,11 +239,88 @@
 	</head>			
 	<body>
 		<div id ="px">px</div>
-		<!--px는 폰트의 크기가 고정 되어 있다 -->
+		px는 폰트의 크기가 고정 되어 있다
 		<div id="rem">rem</div>	
-		<!-- rem은 폰트의 크기를 가변적으로 바꿀수 있다. -->
+		rem은 폰트의 크기를 가변적으로 바꿀수 있다.
 		<h1>hello world</h1>
 		<h2>hello world</h2>
+		
+	</body>
+
+</html> -->
+
+<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  -->
+<!-- 2020 - 10 - 06 -->
+
+
+<!-- <html>
+	텍스트를 정렬하는 방법에 대하여 알아보자 
+	<head>
+		<title>생활코딩  css 정주행</title>
+		<meta charset="UTF-8">
+		
+		<style>
+			
+			p{
+				text-align: justify;
+				/*양쪽에 균등하게 정렬이 된다.  */
+				border :1px solid grey;
+			}
+			
+		</style>	
+				
+	</head>			
+	<body>
+		<p>
+			위키백과는 위키를 이용하여 전 세계 사람들이 함께 만들어가는 웹 기반의 다언어 백과사전입니다. 
+			위키백과는 중립적이고 검증 가능한 자유 콘텐츠 백과사전의 제공을 목적으로 하는 프로젝트로, 
+			누구나 참여하여 문서를 수정하고 발전시킬 수 있습니다.
+			위키백과는 다섯 가지 기본 원칙에 따라 운영됩니다. 
+			모든 문서는 크리에이티브 커먼즈 저작자표시-동일조건변경허락 3.0에 따라 사용할 수 있으며, 
+			복사, 수정과 배포가 자유롭고 상업적 목적의 사용도 가능합니다.
+		</p>
+
+	</body>
+
+</html> -->
+
+<br>
+<br>
+<br>
+
+<html>
+	<!--텍스트를 정렬하는 방법에 대하여 알아보자  -->
+	<head>
+		<title>생활코딩  css 정주행</title>
+		<meta charset="UTF-8">
+		
+		<style>
+			p{
+			/* font-size:5rem;
+			font-family: arial, verdana, "Helvetica Neue", serif;	 */
+			/* 유명한 폰트들 3가지 패밀리는 비슷한 특성들이 앞에 있는 것부터 체크해
+			적용한다 */
+			/*serif는 장식이 있는 폰트 사용 sans-serif는 장식이 없는 폰트  */
+			/*monospace글자간 고정폭을 지정한다.  */
+			/* font-weight: bold; */
+			/*글자를 두겁게 바꾼다.  */
+			/* line-height:2; */
+			/*줄간떨어진 걸 정할 수 있다.  */
+			
+			
+			font:bold 5rem /2 arial, verdana, "Helvetica Neue", serif;
+			/* 위에 식과 똑같이 적용된다. */
+			/*순서대로 적어주는 것이 좋다  */
+			}	
+		
+			
+		</style>	
+				
+	</head>			
+	<body>
+		<p>hello world
+		<br>
+		hello world</p>
 		
 	</body>
 
