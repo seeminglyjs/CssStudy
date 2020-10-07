@@ -286,12 +286,12 @@
 
 </html> -->
 
-<br>
+<!-- <br>
 <br>
 <br>
 
 <html>
-	<!--텍스트를 정렬하는 방법에 대하여 알아보자  -->
+	텍스트를 정렬하는 방법에 대하여 알아보자 
 	<head>
 		<title>생활코딩  css 정주행</title>
 		<meta charset="UTF-8">
@@ -324,6 +324,67 @@
 		<br>
 		hello world</p>
 		
+	</body>
+
+</html> -->
+
+<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  -->
+<!-- 2020 - 10 - 07 -->
+
+<html>
+<상속>
+	<head>
+		<title>생활코딩  css 정주행</title>
+		<meta charset="UTF-8">
+		<style>
+		/* li{color: red;}
+		h1{color: red;} */
+		html{color:red}
+		#select{color:black}
+		body{border:1px solid red;}
+		/*바디테크 전체에 붉은색 테두리가 생김  */		
+		/*속성별 상속되는 것도 있고 안되는 것도 있다.  */
+		/*컬러는 상속이되나 테두리는 상속되지 않는다.  */
+		/*css 설명서를 보면서 체크하는 것이 좋다. */
+		</style>	
+			
+				
+	</head>			
+	<body>
+		<h1>수업내용</h1>
+		<ul>
+			<li>html</li>
+			<li>css</li>
+			<li id="select">javascript</li>
+		</ul>
+	</body>
+
+</html>
+
+<br>
+<br>
+<br>
+
+<html>
+<!--스타일리쉬  -->
+	<head>
+		<title>생활코딩  css 정주행</title>
+		<meta charset="UTF-8">
+		<style>
+		/*크롬 확장프로그램중 하나로
+		보여지는 웹페이지의 디자인을
+		자유롭게 수정할 수 있다.  */
+		</style>	
+							
+	</head>			
+	
+	<body>
+		<h1>수업내용</h1>
+		<ul>
+			<li>html</li>
+			<li>css</li>
+			<li id="select">javascript</li>
+		</ul>
 	</body>
 
 </html>
