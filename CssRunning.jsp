@@ -425,7 +425,7 @@
 			<bracket html css 코딩하는 최적화 되어있는 툴이다.>
 </html>
  -->
-<br>
+<!-- <br>
 <br>
 <br>
 
@@ -443,12 +443,288 @@
 	<body>
 		<h1>hello world</h1>
 			안녕하세요. <a href = "">생활코딩입니다.</a>;
-			<!--a태그는 안되고 h1 태그는 왜 줄바꿈이 될까?  
+			a태그는 안되고 h1 태그는 왜 줄바꿈이 될까?  
 			h1은 화면 전체를 쓰고 이를 블록레벨 엘리먼트라 하고,
-			a태그는 자신만 둘러싸기 때문이다.이를 인라인 엘리먼트라고 한다.-->
+			a태그는 자신만 둘러싸기 때문이다.이를 인라인 엘리먼트라고 한다.
 			
 	</body>
 			
-</html>
+</html> -->
 
- 
+ <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  -->
+<!-- 2020 - 10 - 09 -->
+
+<!--박스모델을 배워보자 매우 중요  -->
+<!--  <html>
+	<head>
+		<title>생활코딩  css 정주행</title>
+		<meta charset="UTF-8">
+		<style>
+			p{
+			border : 10px solid red;
+			padding:20px;
+			margin:40px
+			width: 120px;
+			}
+			/*패딩은 보더안 여백을 설정한다.  */
+			/*마진은 테두리와 다른 태그들간에 가격을 떨어뜨린다.  */		
+		</style>
+		
+				
+	</head>			
+	<body>
+		<p>
+			semple testsemple testsemple testsemple testsemple test
+			semple testsemple testsemple testsemple testsemple test
+			semple testsemple testsemple testsemple testsemple test
+		
+		</p>
+		
+		<p>
+			semple testsemple testsemple testsemple testsemple test
+			semple testsemple testsemple testsemple testsemple test
+			semple testsemple testsemple testsemple testsemple test
+		
+		</p>
+		
+		<p>
+		안녕하세요.<a href ="https://a.com">생활코딩</a>입니다.
+		</p>
+		
+	</body>
+
+</html> -->
+
+
+<!-- <html>
+	<head>
+		<title>생활코딩  css 정주행</title>
+		<meta charset="UTF-8">
+		<style>
+			div{
+				margin: 10px;
+				width: 150px;
+				box-sizing:border-box;
+			}
+			/*보더의 크기가 아닌 컨텐츠의 크기가 중요  */
+			#small{
+			border:10px solid black;
+			}
+			#large{
+			border:30px solid black;
+			}	
+		</style>	
+	</head>			
+	<body>
+		
+		<div id ="small">hello</div>
+		<div id ="large">hello</div>
+		
+	</body>
+
+</html>
+<br>
+<br>
+<br> -->
+
+
+<!--마진 겹침 현상을 알아보자   -->
+<!-- <html>
+	<head>
+		<title>생활코딩  css 정주행</title>
+		<meta charset="UTF-8">
+		<style>
+			h1{
+			border:1px solid red;
+			margin: 10px;
+			}
+			
+			#parent{
+			/* border :1px solid tomato; */
+			margin-top:100px;
+			}
+			
+			#child{
+			background-color: powderblue;
+			margin-top:50px
+			}
+			/*부모태그가 보더가 없이 투명한 상태가 되면 부모 태그와 자식 태그의 마진 겹침 현상이 일어난다.  */
+			/*때문에 차일드의 마진값이 부모의 마진값을 넘어가기 전까지는 변하지 않는다. */
+			/*마진은 가장 큰수를 기준으로 하기 때문  */
+		</style>	
+	</head>			
+	<body>
+		<div id = "parent">
+			<div id = "child">
+			hello world
+			</div>	
+		</div>
+		
+		
+		<h1>hello world</h1>
+		<h1>hello world</h1>
+	</body>
+
+</html> -->
+
+
+ <!-- <html>
+	<head>
+		<title>생활코딩  css 정주행</title>
+		<meta charset="UTF-8">
+		<style>
+		#empty{
+			margin-top:50px;
+			margin-bottom: 100px;
+			/* border:1px solid tomato; */
+		}
+		
+		#normal{
+			background-color: yellow;
+			margin-top:100px;
+		}
+		
+		</style>	
+	</head>			
+	<body>
+		
+		<div id ="empty">empty</div>
+		<div id ="normal">normal</div>
+		
+	</body>
+
+</html> -->
+
+
+ <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  -->
+<!-- 2020 - 10 - 10 -->
+
+
+
+<!-- <html>블로그 작성용 
+	<head>
+		<meta charset="UTF-8">
+				<style >
+					li{color:blue !important;}
+					/*li에 최우선 순위를 줬다.  */
+					#apple{color:red;}
+					.greenapple{color:green;}
+				</style>
+		
+	</head>			
+	<body>
+		<ul>
+			<li>포도</li>
+			<li class ="greenapple" id ="apple"  style=" color:yellow"> 사과</li>
+			<li>수박</li>
+		</ul>
+		
+			
+</html> -->
+
+
+<!-- <html>포지션 
+	<head>
+		<meta charset="UTF-8">
+				<style >
+					html{border:1px solid gray;}
+					div{border:5px solid tomato;
+					margin:10px;}
+					#me{
+					position: relative;
+					/*자신의 위치를 기준으로 동적으로 위치하게 된다.  */
+					/*위치를 지정하기 위해서는  해당 선언을 꼭해주어야 한다. */
+					position: static;
+					/*정적으로 위치하게 된다. */
+					left:100px;
+					/*왼쪽으로부터 100픽셀 떨어진 곳으로 이동(오프셋이라고함) */
+					right:100px;
+					/*항상 레프트가 우선  */
+					top:100px;
+					botton:100px;
+					/*항상 탑이 우선  */
+					}
+				</style>
+				포지션 타입이 relative여야 오프셋을 사용할 수 있다. 
+	</head>			
+	<body>
+		<div id ="other">other</div> 
+			<div id ="parent">
+				parent
+				<div id ="me">me</div>
+			</div>
+
+	</body>
+			
+</html> -->
+
+
+<!-- <html>절대 포지션 
+	<head>
+		<meta charset="UTF-8">
+				<style >
+					#parent, #other{
+					border:5px solid tomato}
+					#grand{position: relative;}
+					#me{
+					background-color:black;
+					color:white;
+					position:absolute;
+					left:0;
+					top:0;
+					width:200px;
+					}
+					/*absolute지정 + 오프셋 위치지정시(0 , 0) html을 기준으로 간다.  */
+					/*absolute만 있을경우 위치가 부모 엘리멘탈을 따르지만 부모와의 링크는 끊키게 된다.*/
+					/*크기 지정시 직접 수정해야한다.  */				
+					/*부모 엘리멘탈에 포지션이 스테틱을 제외한 다른 포지션이 있을 경우 그 부모를 기준으로
+					위치를 지정하게 된다.  */
+				</style>
+				포지션 타입이 relative여야 오프셋을 사용할 수 있다. 
+	</head>			
+	<body>
+		<div id ="other">other</div> 
+			<div id="grand">
+				grand
+				<div id ="parent">
+					parent
+					<div id ="me">me</div>
+				</div>
+			</div>
+	</body>
+			
+</html> -->
+
+
+<html><!-- 포지션 fixed -->
+	<head>
+		<meta charset="UTF-8">
+				<style >
+					#parent, #other{
+					border:5px solid tomato;}
+					#large{
+						height:10000px;
+						background-color:tomato }
+					#me{
+						background-color:black;
+						color:white;
+						position: fixed;
+						left:0;
+						top:0;
+						widtj:100%;
+						text-align: center;
+					}
+					/*fixed는 화면에 고정시켜 스크롤에 움직임과는 다르게 고정시킬 수 있다. */
+				</style>
+				 
+	</head>			
+	<body>
+		<div id ="other">other</div> 
+			<div id ="parent">
+				parent
+				<div id ="me">me</div>
+			</div>
+		<div id ="large">large</div>
+	</body>
+			
+</html>
