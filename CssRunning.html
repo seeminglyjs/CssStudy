@@ -694,7 +694,7 @@
 </html> -->
 
 
-<html><!-- 포지션 fixed -->
+<!-- <html>포지션 fixed
 	<head>
 		<meta charset="UTF-8">
 				<style >
@@ -709,7 +709,7 @@
 						position: fixed;
 						left:0;
 						top:0;
-						widtj:100%;
+						width:100%;
 						text-align: center;
 					}
 					/*fixed는 화면에 고정시켜 스크롤에 움직임과는 다르게 고정시킬 수 있다. */
@@ -725,4 +725,184 @@
 		<div id ="large">large</div>
 	</body>
 			
+</html> -->
+
+
+
+ <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  -->
+<!-- 2020 - 10 - 11 -->
+
+
+<!--flex 플럭스  -->
+ <!-- <html>
+	<head>
+		<title>생활코딩  css 정주행</title>
+		<meta charset="UTF-8">
+		<style>
+			.container{
+				background-color: powderblue;
+				height:200px;
+				display:flex;
+				/* flex-direction:row-reverse; */
+				/*방향별 정렬을 할 수 있다. 기본값은 row(왼쪽)  */
+				flex-direction: column -reverse;
+			}
+			/*부모테그에 flex 선언시 사용할 수 있다.  */
+			.item{
+				background-color :tomato;
+				color:white;
+				border:1px solid white;
+
+			
+			}
+		</style>
+				
+	</head>			
+	<body>
+		<div class="container">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+		</div>
+		자식과 부모의 태그가 있어야 flex를 사용할 수 있다. 
+	</body>
+
+</html> -->
+
+<!--grow / shrink  -->
+<!-- <html>
+	<head>
+		<title>생활코딩  css 정주행</title>
+		<meta charset="UTF-8">
+		<style>
+			.container{
+				background-color: powderblue;
+				height:200px;
+				display:flex;
+				/* flex-direction:row-reverse; */
+				/*방향별 정렬을 할 수 있다. 기본값은 row(왼쪽)  */
+				flex-direction: row;
+			}
+			/*부모테그에 flex 선언시 사용할 수 있다.  */
+			.item{
+				background-color :tomato;
+				color:white;
+				border:1px solid white;
+				/* flex-grow: 1; */
+				/*각 원소값을 부모태그에 꽉채울 수 있도록 한다.  */
+			}			
+			.item:nth-child(1){			
+				flex-basis: 200px; 
+				/*특정 원소의 크기를 바꾸어준다.  */
+			}			
+			.item:nth-child(2){			
+				/* flex-grow:2; */
+				flex-basis: 200px; 
+				/*특정 원소의 크기를 바꾸어준다.  */
+				flex-shrink:0;
+				/*웹사이트 창이 작아저도 0일경우 자기 크기를 유지 */
+				/*값이 커질수록 줄어드는 양도 커짐  */
+			}
+		</style>				
+	</head>			
+	<body>
+		<div class="container">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+		</div>
+		자식과 부모의 태그가 있어야 flex를 사용할 수 있다. 
+	</body>
+
+</html> -->
+
+<br>
+<br>
+<br>
+
+<!--holy grail layout 성배  -->
+<html>
+	<head>
+		<title>생활코딩  css 정주행</title>
+		<meta charset="UTF-8">
+		<style >
+			body{
+				display: flex;
+				align-items: center;
+				/*글을 중앙부터 시작하게 해준다.  */
+				justify-content: center;
+			}
+			
+			.container{
+				display: flex;
+				flex-direction: column;
+				width: 800px;
+				border: 1px solid gray;
+				
+			}
+			
+			header{
+				border-bottom: 1px solid gray;
+				padding-left : 20px;
+			}
+			footer{
+				border-top: 1px solid gray;
+				padding-top : 20px;
+				text-align:center;
+				/*가운데 정렬  */
+			}
+			
+			.content{
+				display : flex;
+			}
+			
+			.content nav{
+				border-right: 1px solid gray;
+			}
+			.content aside{
+				border-left: 1px solid gray;
+			}
+			
+			nav,aside{
+				flex-basis: 150px;
+				flex-shrink : 0;
+			}
+			
+			main{
+				padding: 10px;
+			}
+			
+		</style>
+				
+	</head>			
+	<body>
+		<div class="container">
+			<header>
+				<h1>제목입니다/</h1>
+			</header>	
+			<section class ="content">
+				<nav>
+					<ul>
+						<li>목차1</li>
+						<li>목차2</li>
+						<li>목차3</li>
+					</ul>
+				</nav>
+				<main>
+					성배레이아웃만들기 위한 수업	 성배레이아웃만들기 위한 수업	성배레이아웃만들기 위한 수업	성배레이아웃만들기 위한 수업	성배레이아웃만들기 위한 수업	성배레이아웃만들기 위한 수업	성배레이아웃만들기 위한 수업	성배레이아웃만들기 위한 수업	성배레이아웃만들기 위한 수업	성배레이아웃만들기 위한 수업	성배레이아웃만들기 위한 수업	성배레이아웃만들기 위한 수업	성배레이아웃만들기 위한 수업	
+				</main>
+				<aside>
+					광고영역
+				</aside>
+			</section>
+			<footer>
+				<a href = "https://seeminglyjs.tistory.com/"> 홈페이지</a>
+			</footer>
+			
+		</div>
+
+	</body>
+
 </html>
