@@ -959,11 +959,11 @@ holy grail layout 성배
 
 </html> -->
 
-<br>
+<!-- <br>
 <br>
 <br>
 
-<html><!--media query  -->
+<html>media query 
 	<head>
 		
 		<title>생활코딩  css 정주행</title>
@@ -999,3 +999,111 @@ holy grail layout 성배
 	</body>
 
 </html>
+ -->
+ 
+<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  -->
+<!-- 2020 - 10 - 13 --> 
+
+
+<html><!--mediaquery2  -->
+	<head>
+		<title>생활코딩  css 정주행</title>
+		<meta charset="UTF-8">
+		<style >
+			body{
+				display: flex;
+				align-items: center;
+				/*글을 중앙부터 시작하게 해준다.  */
+				justify-content: center;
+			}
+			
+			.container{
+				display: flex;
+				flex-direction: column;
+				width: 800px;
+				border: 1px solid gray;
+				
+			}
+			
+			header{
+				border-bottom: 1px solid gray;
+				padding-left : 20px;
+			}
+			footer{
+				border-top: 1px solid gray;
+				padding-top : 20px;
+				text-align:center;
+				/*가운데 정렬  */
+			}
+			.content{
+				display : flex;
+			}
+				
+			.content nav{
+				border-right: 1px solid gray;
+			}/*우선순위로 인행 변경이 되지 않을 수 있어 위로 올린다.  */
+			.content aside{
+				border-left: 1px solid gray;
+			}
+			
+			@media(max-width:500px){
+				.content{
+				flex-direction:column;
+				}
+				.content nav, .content aside{
+				border-right: none;
+				flex-basis : auto;
+				}
+				main{
+					oreder:0;
+				}/*main 제일 먼저 나온다.  */
+				nav{
+					order:1;
+				}
+				ad{
+					oreder:2;
+				}
+			}
+
+			nav,aside{
+				flex-basis: 150px;
+				flex-shrink : 0;
+			}
+			
+			main{
+				padding: 10px;
+			}
+			
+		</style>
+				
+	</head>			
+	<body>
+		<div class="container">
+			<header>
+				<h1>제목입니다/</h1>
+			</header>	
+			<section class ="content">
+				<nav>
+					<ul>
+						<li>목차1</li>
+						<li>목차2</li>
+						<li>목차3</li>
+					</ul>
+				</nav>
+				<main>
+					성배레이아웃만들기 위한 수업	 성배레이아웃만들기 위한 수업	성배레이아웃만들기 위한 수업	성배레이아웃만들기 위한 수업	성배레이아웃만들기 위한 수업	성배레이아웃만들기 위한 수업	성배레이아웃만들기 위한 수업	성배레이아웃만들기 위한 수업	성배레이아웃만들기 위한 수업	성배레이아웃만들기 위한 수업	성배레이아웃만들기 위한 수업	성배레이아웃만들기 위한 수업	성배레이아웃만들기 위한 수업	
+				</main>
+				<aside>
+					광고영역
+				</aside>
+			</section>
+			<footer>
+				<a href = "https://seeminglyjs.tistory.com/"> 홈페이지</a>
+			</footer>
+			
+		</div>
+
+	</body>
+
+</html>
+ 
